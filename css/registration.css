@@ -1,0 +1,41 @@
+.radio-btn {
+  display: flex;
+  width: 50px;
+}
+
+#radio {
+  margin-right: 10px;
+  margin-left: 5px;
+}
+table {
+    margin-top: 60px;
+}
+.h3{
+    position: relative;
+    top: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+section {
+  padding-top: 30px;
+}
+
+/* for responsive */
+
+@media (min-width: 768px) {
+  section {
+      padding-top: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  section {
+      padding-top: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  section {
+      padding-top: 40px;
+  }
+}

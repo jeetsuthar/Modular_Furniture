@@ -1,0 +1,152 @@
+center #About_Us_name {
+  font-size: 40px;
+  padding: 40px;
+  color: rgb(75, 75, 75);
+}
+.container_about {
+  background-color: #fff;
+  max-width: 1300px;
+  position: relative;
+  padding: 40px;
+}
+
+.thumbnail_about img {
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.content_about {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 750px;
+  min-height: 350px;
+  margin-top: 70px;
+  margin-right: 40px;
+  padding: 40px 30px 30px 40px;
+  background: #f6f6f6;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+p {
+  font-size: 14px;
+  margin: 0 0 15px;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .container_about {
+    background-color: #fff;
+    max-width: 1000px;
+    padding: 40px;
+  }
+
+  .content_about {
+    flex: 0 0 auto;
+    margin-left: -200px;
+    margin-top: 90px;
+    min-height: 310px;
+    padding: 20px 30px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  body {
+    background-color: #fff;
+  }
+
+  .container_about {
+    max-width: 700px;
+    margin: 40px;
+  }
+
+  .content_about {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .container_about {
+    max-width: 500px;
+  }
+
+  .content_about {
+    position: relative;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .container_about {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .content_about {
+    position: relative;
+  }
+}
+
+/* cards */
+.Team_heading {
+  font-size: 25px;
+  text-align: center;
+  color: rgb(60, 60, 60);
+}
+.our_team {
+  max-width: 1500px;
+  padding: 20px;
+}
+.cards_about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.description_card {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  background-color: rgb(210, 209, 209);
+  color: black;
+  text-align: center;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+}
+.description_card:hover {
+  border-radius: 6px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 5px 5px 20px #868686, -5px -5px 20px #ffffff;
+}
+
+.description_card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.description_card #card_heading {
+  font-size: 15px;
+  color: gray;
+  margin: 10px;
+}
+#client_experience {
+  color: crimson;
+  font-size: 15px;
+}
+.description_card #card_paragraph {
+  padding: 5px;
+  word-break: break-all;
+}
+.social_icons a{
+  padding: 5px;
+}

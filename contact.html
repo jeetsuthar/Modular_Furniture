@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <title>Contact with Modular Furniture</title>
+
+    <!--CSS bundle -->
+    <link rel="stylesheet" media="all" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" href="css/animate.css" />
+    <link rel="stylesheet" media="all" href="css/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="css/ion-range-slider.css" />
+    <link rel="stylesheet" media="all" href="css/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="css/magnific-popup.css" />
+    <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="css/theme.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="page-loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+
+    <div class="wrapper">
+      <div id="header"></div>
+      <!-- Header nav-bar -->
+      <div class="section-1">
+        <div
+          class="contact-img-text animate__animated animate__slideInLeft animate__faster"
+        >
+          <h1>We Help <span>You to Make </span> Modern Interior</h1>
+        </div>
+        <!-- for img  ==  class="animate__animated animate__zoomIn animate__delay-.8s" -->
+        <img
+          class="animate__animated animate__slideInRight animate__faster"
+          src="images/box-2.jpg"
+          class="img-fluid"
+          id="contact-img"
+          alt=""
+        />
+      </div>
+
+      <section>
+        <div class="contact-container">
+          <h1>Contact with us</h1>
+          <p>
+            We would love to respond to your queries and help you succeed .
+            <br />
+            We are a team which strives to create products that respect your
+            time and money.
+          </p>
+          <div class="contact-box">
+            <div class="contact-left">
+              <h3 class="form-caption">
+                Feel free to fill the form below and we will contact you
+                shortly.
+              </h3>
+              <form>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Enter your Name "
+                      title="Enter your Full name"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label>Phone </label>
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="+91-852 364 1970"
+                      title="Enter your valid mobile to contact for you"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="input-row">
+                  <div class="input-group">
+                    <label>Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="modular@gmail.com"
+                      title="Email is required"
+                      required
+                    />
+                  </div>
+                  <div class="input-group">
+                    <label>Subject</label>
+                    <input
+                      type="text"
+                      name="Subject"
+                      id="subject"
+                      placeholder="type your queries... "
+                      title="Enter your Queries subject ..."
+                      required
+                    />
+                  </div>
+                </div>
+                <label>massage</label>
+                <textarea
+                  id="massage"
+                  name="massage"
+                  cols="40"
+                  rows="5"
+                  title="Write your Full Explanation about your Queries."
+                  placeholder="Type your massage here"
+                  required
+                ></textarea>
+                <button
+                  type="submit"
+                  name="submit"
+                  class="button-send"
+                  onclick="submitForm()"
+                >
+                  <span>send </span></button
+                ><button type="reset" class="button-send">Reset</button>
+              </form>
+            </div>
+            <div id="popup-box">
+              Your response has been saved.<br />
+              we will contact you. <br />
+              Thank you !!
+            </div>
+
+            <div class="contact-right">
+              <h3>Reach us</h3>
+              <table>
+                <tr>
+                  <td>Email</td>
+                  <td>Modularfurniture@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>Phone</td>
+                  <td>+91-852 364 1970</td>
+                </tr>
+                <tr>
+                  <td>Address</td>
+                  <td>
+                    Abhinandan Royale Complex, Bhatar Road,<br />
+                    Opp. Raj Empire, Swami Gunatit Nagar, Bhatar,<br />
+                    Athwa, Surat, Gujarat
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer nav-bar -->
+      <div id="footer"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      $(function () {
+        $("#header").load("_header.html");
+        $("#footer").load("_footer.html");
+      });
+
+      function submitForm() {
+        validate();
+      }
+
+      function validate() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let mobile = document.getElementById("phone").value;
+        let subject = document.getElementById("subject").value;
+        let massage = document.getElementById("massage").value;
+
+        if (
+          email == "" ||
+          mobile == "" ||
+          subject == "" ||
+          name == "" ||
+          massage == ""
+        ) {
+          alert("Fill all the Details for Contact to designer");
+        } else {
+          showPopup();
+        }
+      }
+      function showPopup() {
+        var popupBox = document.getElementById("popup-box");
+        popupBox.style.display = "block";
+
+        setTimeout(function () {
+          popupBox.style.display = "none";
+        }, 2000);
+      }
+    </script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/mailsender.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/ion.rangeSlider.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/bigtext.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

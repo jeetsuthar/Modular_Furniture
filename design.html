@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <title>Modular Furniture</title>
+
+    <!--CSS bundle -->
+    <link rel="stylesheet" media="all" href="css/bootstrap.css" />
+    <link rel="stylesheet" media="all" href="css/animate.css" />
+    <link rel="stylesheet" media="all" href="css/font-awesome.css" />
+    <link rel="stylesheet" media="all" href="css/ion-range-slider.css" />
+    <link rel="stylesheet" media="all" href="css/linear-icons.css" />
+    <link rel="stylesheet" media="all" href="css/magnific-popup.css" />
+    <link rel="stylesheet" media="all" href="css/owl.carousel.css" />
+    <link rel="stylesheet" media="all" href="css/theme.css" />
+    <link rel="stylesheet" media="all" href="css/new_arriavel.css" />
+
+    <!--Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- <div class="page-loader">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div> -->
+
+    <div class="wrapper">
+      <div id="header"></div>
+
+      <h1>
+        <center>Furniture Designs</center>
+      </h1>
+      <center>
+        <p>
+          Search your Design according to your requirement. <br />
+          Note : You can only search Furniture Related Images.
+        </p>
+      </center>
+      <div class="search-box">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for furniture"
+        />
+        <button id="searchButton">Search</button>
+      </div>
+      <div class="gallery" id="gallery"></div>
+      <div class="loading" id="loading">
+        
+        <div class="error_msg">
+          <span id="ntework_error"
+            >Loading...</span
+          >
+        </div>
+      </div>
+
+      <div id="footer"></div>
+    </div>
+    <!--Scripts -->
+    <script>
+      let page = document.getElementById("gallery").value;
+      var loading = document.getElementById("ofline");
+      let connection = document.getElementById("connect");
+
+      if (navigator.onLine) {
+        show.page;
+        loading.style.display = "none";
+      } else {
+        loading.style.display = "block";
+      }
+    </script>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script>
+        $(function(){
+          $("#header").load("_header.html");
+          $("#footer").load("_footer.html");
+        });
+      </script>
+    <script src="js/new_arriavel.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/include.js"></script>
+    <script src="js/ion.rangeSlider.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/tilt.jquery.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/bigtext.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

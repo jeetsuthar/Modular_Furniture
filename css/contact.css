@@ -1,0 +1,259 @@
+
+.section-1 {
+  font-family: "Open Sans", sans-serif;
+  height: 60vh;
+  position: relative;
+}
+#contact-img {
+  position: relative;
+  float: right;
+  top: -5%;
+}
+.contact-img-text {
+  position: absolute;
+  top: 28%;
+  height: 300px;
+  left: 15%;
+  justify-content: center;
+  padding:40px 50px;
+  border-radius: 5px;
+  max-width: 600px;
+  z-index: 99;
+  background: rgba(85, 77, 77, 0.2);
+  backdrop-filter: blur(10px);
+}
+.contact-img-text h1 {
+  font-size: 4em;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+.contact-img-text h1 span {
+  color: rgb(65, 202, 143);
+  text-shadow: 2px 3px 5px lightslategray;
+}
+@media screen and (max-width: 1200px) {
+  .contact-img-text {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact-img-text {
+    backdrop-filter: blur(5px);
+  }
+}
+@media screen and (max-width: 750px) {
+  .contact-img-text {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+  }
+  .section-1 {
+    display: grid;
+    justify-content: center;
+  }
+  .contact-img-text h1 {
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 650px) {
+  .contact-img-text {
+    top: 0;
+    left: 0;
+    height: 120px;
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .contact-img-text h1 {
+    font-size: 3em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contact-img-text h1 {
+    font-size: 2em;
+  }
+}
+
+/* section-2 */
+
+.section-2 {
+  position: relative;
+  top: 0;
+  font-size: 14px;
+  height: 90vh;
+  background-color: #fff;
+  margin-top: 20px;
+  z-index: 5;
+}
+.contact-container {
+  width: 90%;
+  margin: 50px auto;
+}
+.contact-box {
+  background: #fff;
+  display: flex;
+}
+.contact-left {
+  flex-basis: 60%;
+  background: rgb(234, 231, 231);
+  padding: 40px 50px;
+}
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px;
+  background: #77b1a6;
+  color: #fff;
+}
+h1 {
+  margin-bottom: 10px;
+}
+.contact-container p {
+  margin-bottom: 40px;
+}
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.form-caption {
+  padding-bottom: 10px;
+  color: rgb(82, 82, 82);
+}
+.input-row .input-group {
+  flex-basis: 45%;
+  padding-bottom: 5px;
+}
+label {
+  color: black;
+  font-weight: 600;
+}
+input {
+  width: 100%;
+  border: none;
+  background: rgb(234, 231, 231);
+  outline: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+textarea {
+  width: 100%;
+  border: 1px solid #000000;
+  outline: none;
+  padding: 10px;
+  border-radius: 4px;
+  background: rgb(234, 231, 231);
+  box-sizing: border-box;
+}
+.button-send {
+  border-radius: 40px;
+  background-color: #4893c8;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+  width: 130px;
+  transition: all 0.2s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button-send span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.button-send span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+.button-send:hover {
+  background: #6fa0c2;
+  color: black;
+}
+
+.button-send:hover span {
+  padding-right: 25px;
+}
+
+.button-send:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+tr td:first-child {
+  padding-right: 20px;
+}
+tr td {
+  padding-top: 50px;
+  font-size: 16px;
+}
+@media screen and (max-width: 375px) {
+}
+@media screen and (max-width: 992px) {
+  .input-row {
+    display: grid;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact-right {
+    flex-basis: 0;
+    padding: 5px;
+  }
+  tr td:first-child {
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 697px) {
+  .contact-right {
+    display: none;
+  }
+  .input-row {
+    display: flex;
+  }
+  .contact-left {
+    flex-basis: 100%;
+  }
+  .contact-container {
+    width: 100%;
+  }
+  .input-row {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .input-row {
+    display: grid;
+  }
+}
+
+/* pop up massage */
+
+#popup-box {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  color: black;
+  word-spacing: 5px;
+  line-height: 20px;
+  font-weight: bold;
+  background-color: rgb(146, 202, 130);
+  border: 1px solid #ffffff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}

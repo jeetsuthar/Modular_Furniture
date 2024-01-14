@@ -1,0 +1,76 @@
+.gallery-container {
+    position: relative;
+    max-width: 1300px;
+    width: 100%;
+    padding: 20px;
+    margin: 30px auto;
+}
+
+.filter_button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 7px 20px;
+    font-size: 17px;
+    background: #F5F4EF;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 0 0 10px inset rgb(157, 157, 157);
+}
+
+button.active {
+    background-color: #4070f4;
+    color: white;
+}
+
+.filter_card {
+    display: flex;
+    margin-top: 25px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery_card {
+    flex-grow: 1;
+    flex-basis: 400px;
+    background-color: #e2e1e1;
+    color: black;
+    padding: 5px;
+    border-radius: 8px;
+    
+}
+.gallery_card.hide{
+    display: none;
+}
+.gallery_card:hover{
+    box-shadow: 0 0 10px inset rgb(166, 166, 166);
+}
+.gallery_card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card_body {
+    padding: 15px 20px 20px;
+}
+
+.card_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.card_text {
+    font-size: 18px;
+    color: #333;
+}
