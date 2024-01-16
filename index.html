@@ -36,7 +36,9 @@
   </div> -->
 
   <div class="wrapper">
-    <div id="header"></div>
+    <div id="header">
+      
+    </div>
 
 
 
@@ -370,12 +372,22 @@
   </div>
   <!--Scripts -->
   
-<
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
   <script>
-    $(function(){
-      $("#header").load("_header.html");
-      $("#footer").load("_footer.html");
+  function loadContent(url, elementId) {
+      fetch(url)
+        .then(response => response.text())
+        .then(content => {
+          document.getElementById(elementId).innerHTML = content;
+        })
+        .catch(error => console.error('Error loading content:', error));
+    }
+
+    // Equivalent of $(function() { ... }) for vanilla JavaScript
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load header and footer content
+      loadContent('_header.html', 'header');
+      loadContent('_footer.html', 'footer');
     });
   </script>
   <script src="js/jquery.min.js"></script>
